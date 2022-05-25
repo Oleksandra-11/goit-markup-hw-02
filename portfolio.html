@@ -4,90 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Портфолио</title>
 </head>
 <body>
-    <header>
-        <a href="/">WebStudio</a>
-        <nav>
-            <ul>
-                <li><a href="">Студия</a></li>
-                <li><a href="">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+    <header class="header">
+        <a class="logo" href="/">Web<span class="logo-blackpart">Studio</span></a>
+        <nav class="site-nav">
+            <ul class="list">
+                <li><a href="./index.html" class="link">Студия</a></li>
+                <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
+                <li><a href="" class="link">Контакты</a></li>
             </ul>
         </nav>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
+        <ul class="auth list">
+            <li><a href="mailto:info@devstudio.com" class="mailto">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="tel">+38 096 111 11 11</a></li>
+        </ul>
     </header>
     
-    <section>
-        <h1>Фильтр</h1>
-        <ul>
-            <li><button type="button">Все</button></li>
-            <li><button type="button">Веб-сайти</button></li>
-            <li><button type="button">Приложения</button></li>
-            <li><button type="button">Дизайн</button></li>
-            <li><button type="button">Маркетинг</button></li>
+    <section class="filtr">
+        <h1 class="filtr-title">Фильтр</h1>
+        <ul class="list">
+            <li><button type="button" class="filtr-button">Все</button></li>
+            <li><button type="button" class="filtr-button">Веб-сайти</button></li>
+            <li><button type="button" class="filtr-button">Приложения</button></li>
+            <li><button type="button" class="filtr-button">Дизайн</button></li>
+            <li><button type="button" class="filtr-button">Маркетинг</button></li>
         </ul>
     </section>
 
     <section>
-        <ul>
+        <ul class="list">
             <li>
                 <img src="./img/img-2-1.jpg" alt="Главная страница сайта с портретами трех сотрудников">
-                <p>Технокряк</p>
+                <p class="section-title">Технокряк</p>
                 <h1>Веб-сайт</h1>
             </li>
             <li>
                 <img src="./img/img-2-2.jpg" alt="Два баскетболиста в элементе игры">
-                <p>Постер New Orlean vs Golden Star</p>
+                <p class="section-title">Постер New Orlean vs Golden Star</p>
                 <h1>Дизайн</h1>
             </li>
             <li>
                 <img src="./img/img-2-3.jpg" alt="Логотип ресторана Seafood  срыбой">
-                <p>Ресторан Seafood</p>
+                <p class="section-title">Ресторан Seafood</p>
                 <h1>Приложение</h1>
             </li>
             <li>
                 <img src="./img/img-2-4.jpg" alt="Наушники закрытого типа">
-                <p>Проект Prime</p>
+                <p class="section-title">Проект Prime</p>
                 <h1>Маркетинг</h1>
             </li>
             <li>
                 <img src="./img/img-2-5.jpg" alt="Две коробки, белая и коричневая">
-                <p>Проект Boxes</p>
+                <p class="section-title">Проект Boxes</p>
                 <h1>Приложение</h1>
             </li>
             <li>
                 <img src="./img/img-2-6.jpg" alt="Монитор с изображением страницы сайта">
-                <p>Inspiration has no Borders</p>
+                <p class="section-title">Inspiration has no Borders</p>
                 <h1>Веб-сайт</h1>
             </li>
             <li>
                 <img src="./img/img-2-7.jpg" alt="Разворот журнала">
-                <p>Издание Limited Edition</p>
+                <p class="section-title">Издание Limited Edition</p>
                 <h1>Дизайн</h1>
             </li>
             <li>
                 <img src="./img/img-2-8.jpg" alt="Стилизированная этикетка">
-                <p>Проект LAB</p>
+                <p class="section-title">Проект LAB</p>
                 <h1>Маркетинг</h1>
             </li>
             <li>
                 <img src="./img/img-2-9.jpg" alt="Ноутбук, за которым работает человек">
-                <p>Growing Business</p>
+                <p class="section-title">Growing Business</p>
                 <h1>Приложение</h1>
             </li>
         </ul>
     </section>
-    <footer>
-        <a href="/">WebStudio</a>
-        <address>
+    <footer class="footer">
+        <a class="logo" href="/">Web<span class="logo-whitepart">Studio</span></a>
+        <address class="address">
             г. Киев, пр-т Леси Украинки, 26
         </address>
         <address>
-            <a href="mailto:info@example.com">info@example.com</a>
-            <a href="tel:+380991111111">+38 099 111 11 11</a>
+            <a class="mailto" href="mailto:info@example.com">info@example.com</a>
+            <a class="tel" href="tel:+380991111111">+38 099 111 11 11</a>
         </address>
     </footer>
 </body>

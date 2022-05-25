@@ -1,0 +1,123 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --primary-grey-color: #2F303A;
+    --secondary-grey-color: #F5F4FA;
+}
+
+
+body {
+    background-color: #E5E5E5;
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+/* site-nav */
+
+.header {
+    background-color: var(--primary-white-color);
+}
+
+.logo {
+    color: var(--accent-color);
+}
+
+.logo-blackpart {
+    color: var(--title-text-color);
+}
+
+.logo:hover,
+.logo:focus {
+    text-decoration: underline;
+}
+
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.auth .mailto {
+    color: var(--primary-text-color);
+}
+
+.auth .tel {
+    color: var(--primary-text-color);
+}
+
+.auth .mailto:hover,
+.auth .tel:hover,
+.auth .mailto:focus,
+.auth .tel:focus {
+    color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero-title {
+    color: var(--primary-white-color);
+    background-color: var(--primary-grey-color);
+}
+
+.button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+/* Sections */
+
+.section .title {
+    color: var(--title-text-color);
+}
+.section-title {
+    color: var(--title-text-color);
+}
+.section.ourteam {
+background-color: var(--secondary-grey-color)
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--primary-grey-color);
+}
+.logo-whitepart {
+    color: var(--primary-white-color);
+}
+
+.address {
+    color: var(--primary-white-color);
+}
+
+.mailto,
+.tel {
+    color: rgba(255,255,255,0.6);
+}
+
+/* Portfolio */
+/* Filtr */
+.filtr-button {
+   color: var(--title-text-color); 
+   background-color: var(--secondary-grey-color);
+}
+.filtr-title {
+    visibility: hidden;
+}
+
+.filtr-button:hover,
+.filtr-button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
