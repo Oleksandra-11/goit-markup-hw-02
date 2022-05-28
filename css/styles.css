@@ -125,11 +125,15 @@ body {
     font-size: 14px;
     line-height: 1.17;
 }
-.section.ourteam {
-background-color: var(--background-ourteam-and-filtrbtn-color)
-}
 
 /*-----------------------OURTEAM----------------- */
+
+.section-card {
+    background-color: var(--primary-light-color);
+}
+.section.ourteam {
+    background-color: var(--background-ourteam-and-filtrbtn-color)
+}
 
 .ourteam-title {
     color: var(--title-text-color);
@@ -190,6 +194,7 @@ background-color: var(--background-ourteam-and-filtrbtn-color)
     line-height: 1.62;
     /* identical to box height, or 162% */
     text-align: center;
+    cursor: pointer;
 }
 .filtr-title {
     position: absolute;
