@@ -2,29 +2,37 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
-    --primary-white-color: #FFFFFF;
-    --primary-grey-color: #2F303A;
-    --secondary-grey-color: #F5F4FA;
+    --primary-light-color: #FFFFFF;
+    --background-hero-and-footer-color: #2F303A;
+    --background-ourteam-and-filtrbtn-color: #F5F4FA;
 }
 
 
 body {
     background-color: #E5E5E5;
     color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
 }
 
 .list {
     list-style: none;
 }
 
-/* site-nav */
+/*-----------------------SITE-NAV----------------- */
 
 .header {
-    background-color: var(--primary-white-color);
+    background-color: var(--primary-light-color);
 }
 
 .logo {
     color: var(--accent-color);
+    font-family: Railway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .logo-blackpart {
@@ -38,6 +46,11 @@ body {
 
 .site-nav .link {
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -49,12 +62,14 @@ body {
     color: var(--accent-color);
 }
 
-.auth .mailto {
-    color: var(--primary-text-color);
-}
-
+.auth .mailto,
 .auth .tel {
     color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .auth .mailto:hover,
@@ -64,60 +79,147 @@ body {
     color: var(--accent-color);
 }
 
-/* Hero */
+/*-----------------------HERO----------------- */
 
 .hero-title {
-    color: var(--primary-white-color);
-    background-color: var(--primary-grey-color);
+    color: var(--primary-light-color);
+    background-color: var(--background-hero-and-footer-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .button {
-    color: var(--primary-white-color);
+    color: var(--primary-light-color);
     background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
-/* Sections */
+/*-----------------------FEATURES----------------- */
 
-.section .title {
+.feature {
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
 .section-title {
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+}
+.feature-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
 }
 .section.ourteam {
-background-color: var(--secondary-grey-color)
+background-color: var(--background-ourteam-and-filtrbtn-color)
 }
 
-/* Footer */
+/*-----------------------OURTEAM----------------- */
+
+.ourteam-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.ourteam-specialist {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+/*-----------------------FOOTER----------------- */
 
 .footer {
-    background-color: var(--primary-grey-color);
+    background-color: var(--background-hero-and-footer-color);
 }
 .logo-whitepart {
-    color: var(--primary-white-color);
+    color: var(--primary-light-color);
 }
 
 .address {
-    color: var(--primary-white-color);
+    color: var(--primary-light-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
-
 .mailto,
 .tel {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
 }
 
-/* Portfolio */
-/* Filtr */
+.address:hover,
+.address:focus,
+.mailto:hover,
+.mailto:focus,
+.tel:hover,
+.tel:focus {
+    color: var(--accent-color);
+}
+
+/*-----------------------PORTFOLIO----------------- */
+
+
 .filtr-button {
-   color: var(--title-text-color); 
-   background-color: var(--secondary-grey-color);
+    color: var(--title-text-color); 
+    background-color: var(--background-ourteam-and-filtrbtn-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    /* identical to box height, or 162% */
+    text-align: center;
 }
 .filtr-title {
-    visibility: hidden;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 .filtr-button:hover,
 .filtr-button:focus {
-    color: var(--primary-white-color);
+    color: var(--primary-light-color);
     background-color: var(--accent-color);
+}
+
+
+/* -----------------------OURPROJECT--------------------- */
+.ourprojects-name {
+font-weight: 700;
+font-size: 18px;
+line-height: 2.0;
+/* identical to box height, or 200% */
+letter-spacing: 0.06em;
+color: var(--title-text-color);
+}
+
+.ourprojects-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
 }
