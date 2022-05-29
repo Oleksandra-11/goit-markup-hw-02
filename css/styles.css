@@ -7,6 +7,11 @@
     --background-ourteam-and-filtrbtn-color: #F5F4FA;
 }
 
+/* *,
+*::before,
+*::after {
+    box-sizing: boder-box;
+} */
 
 body {
     background-color: #E5E5E5;
@@ -41,7 +46,7 @@ body {
 
 .logo:hover,
 .logo:focus {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .site-nav .link {
@@ -56,6 +61,7 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
+    text-decoration: none;
 }
 
 .site-nav .link.current {
@@ -117,11 +123,10 @@ body {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.67;
+    line-height: 1.17;
     text-align: center;
 }
 .feature-text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.17;
 }
@@ -139,13 +144,12 @@ body {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.88;
+    line-height: 1.19;
 }
 
 .ourteam-specialist {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1.88;
+    line-height: 1.19;
 }
 
 /*-----------------------FOOTER----------------- */
@@ -160,14 +164,12 @@ body {
 .address {
     color: var(--primary-light-color);
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
 .mailto,
 .tel {
     color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
